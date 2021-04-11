@@ -7,6 +7,7 @@ A short description of the project.
     ├── LICENSE
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
+    │   ├── external       <- External data sources for the raw data.
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
