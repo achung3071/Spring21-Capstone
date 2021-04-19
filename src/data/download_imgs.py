@@ -35,7 +35,8 @@ def url_to_jpg(row):
         else:
             missing_img_csv = f"{img_type_dir}/missing_imgs.csv"
             mode = 'a' if os.path.exists(missing_img_csv) else 'w'
-            row.to_frame().T.to_csv(missing_img_csv, mode=mode)
+            header = mode == 'w'
+            row.to_frame().T.to_csv(missing_img_csv, mode=mode, header=header)
 
     return row
 
